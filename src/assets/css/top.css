@@ -1,0 +1,140 @@
+.box {
+  background-color: #e8edf7;
+}
+
+.item:before {
+  content: "|";
+  float: left;
+  color: #94959E;
+}
+
+#top {
+  height: 30px;
+  background-color: white;
+  height: 40px;
+  box-shadow: 0 0 10px #94959E;
+}
+
+#top ul {
+  list-style-type: none;
+  /*去掉列表项编号*/
+  text-align: center;
+}
+
+#top li {
+  float: left;
+  /*将列表项设为向左浮动*/
+  text-align: center;
+  /*文字为居中*/
+  line-height: 30px;
+}
+
+#top li a {
+  display: block;
+  width: 90px;
+  /*设置超链接的宽度,及是每个名字间的距离*/
+  color: black;
+  /*文字颜色*/
+  text-decoration: none;
+}
+
+#top li a:hover {
+  color: skyblue;
+  /*鼠标指针点击时的背景颜色*/
+}
+
+.index {
+  height: 100px;
+  width: 200px;
+}
+
+.underline {
+  width: 75px;
+  position: relative;
+}
+
+.underline:after {
+  content: "";
+  width: 0;
+  height: 5px;
+  background: skyblue;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transition: all .8s;
+}
+
+.underline:hover:after {
+  left: 3%;
+  width: 100%;
+}
+
+.body {
+  background-color: white;
+  margin-top: 15px;
+  padding-left: 10px;
+}
+
+.body_top {
+  /*display: flex;*/
+  /*position: relative;*/
+  display: flex;
+  height: 80px;
+  position: relative;
+}
+
+.body_top .menu_register {
+  margin-left: 83.5%;
+  position: absolute;
+  right: 70px;
+  top: 5px;
+}
+
+
+.body_top .register{
+  position: absolute;
+  right: 5px;
+  top: 1px;
+}
+
+.body_top .menu {
+  /*margin-left: 88.5%;*/
+  /*padding-top: 15px;*/
+  margin-left: 83.5%;
+  position: absolute;
+  right: 70px;
+  top: 40px;
+}
+
+.body_top .close {
+  /*position: absolute;*/
+  /*right: 0;*/
+  /*top: 12px;*/
+  position: absolute;
+  right: 5px;
+  top: 40px;
+}
+
+.body_center {
+  display: flex;
+  transform: scale(0.98, 1);
+  box-shadow: 0 0 10px #94959E;
+  height: 80px;
+}
+
+.body_center .one {
+  font-size: 15px;
+  width: 260px;
+  text-align: left;
+}
+
+.body_center .two {
+  font-size: 15px;
+  text-align: left;
+}
+
+.body_bottom {
+  display: flex;
+  margin-top: 15px;
+  transform: scale(0.98, 1);
+}
